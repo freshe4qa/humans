@@ -161,6 +161,7 @@ humansd tx staking create-validator \
   --pubkey  $(humansd tendermint show-validator) \
   --moniker $NODENAME \
   --chain-id testnet-1 \
+  --fees=5000uheart \
   -y
   
 break
