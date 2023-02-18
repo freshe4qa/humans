@@ -131,6 +131,8 @@ EOF
 
 humansd tendermint unsafe-reset-all --home $HOME/.humans
 
+curl https://snapshots-testnet.nodejumper.io/humans-testnet/testnet-1_2023-02-17.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.humans
+
 # start service
 sudo systemctl daemon-reload
 sudo systemctl enable humansd
